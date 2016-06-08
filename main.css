@@ -225,13 +225,13 @@ main {
  */
 
 .scores {
-  max-width: 100%;
-  padding-top: 1em;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .scores__table {
   width: 100%;
-  border-collapse: collapse;
+  overflow-x: auto;
 }
 
 .scores__table th,
@@ -395,8 +395,15 @@ footer a {
 .box {
   width: 100%;
 }
+
+@media screen and (max-width: 470px) {
+  .scores {
+    width: 470px;
+    overflow-x: auto;
+}
+}
     /*sets initial box size to 100% (starting small on phone)*/
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   #drawer {
     width: 100%
   }
@@ -417,9 +424,9 @@ p {
   .weather {
     width: 100%;
   }
-  .scores {
-    width: 100%;
-  }
+
+
+
 /*     sets the nav list to be 1 quarter width per item and the weather list to be full span
 */
 @media screen and (min-width: 719px) {
@@ -461,6 +468,7 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+
 
 /*their responsive*/
 
