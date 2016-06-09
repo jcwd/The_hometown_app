@@ -182,7 +182,7 @@ main {
  */
 
 .top-news {
-  max-width: 100%;
+  width: 100%;
   height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
@@ -228,12 +228,10 @@ main {
 
 .scores {
   width: 100%;
-  overflow-x: auto;
 }
 
 .scores__table {
   width: 100%;
-  overflow-x: auto;
 }
 
 .scores__table th,
@@ -275,7 +273,7 @@ main {
  */
 
 .weather {
-  max-width: 100%;
+  width: 100%;
   padding: 1em;
 }
 
@@ -371,17 +369,14 @@ footer {
   padding: 1em;
   width: 100%;
 }
-
 footer li {
   display: inline-block;
   margin: 0 1em;
 }
-
 footer a {
   text-decoration: none;
   color: #333;
 }
-
 /* beginning of responsive styles*/
 .content {
   width: 100%;
@@ -397,7 +392,6 @@ footer a {
 .box {
   width: 100%;
 }
-
     /*sets initial box size to 100% (starting small on phone)*/
 @media screen and (max-width: 320px) {
   #drawer {
@@ -413,22 +407,28 @@ footer a {
 }
  .top-news {
     width: 100%
-  }
+    }
 p {
   margin-top: 6px;
 }
   .weather {
     width: 100%;
   }
+}
 /* End of initial box size for small phones */
 
+/* minor breakpoint for resposive contained table*/
 @media screen and (max-width: 470px) {
   .scores {
     width: 470px;
     overflow-x: auto;
+  }
+  .scores__table {
+    width: 470px;
+    overflow-x: auto;
+  }
 }
-}
-
+/* end of minor breakpoint for resposive contained table*/
 
 /*     sets the nav list to be 1 quarter width per item and the weather list to be full span
 */
