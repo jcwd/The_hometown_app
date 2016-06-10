@@ -16,6 +16,7 @@ body {
 
 p {
   max-width: 65ch;
+  text-align: left;
 }
 
 h1, h2, h3, h4, h5 {
@@ -349,6 +350,7 @@ main {
 
 .snippet__title {
   font-weight: 500;
+  text-align: left;
 }
 
 .snippet__title a {
@@ -422,13 +424,13 @@ p {
 /* End of initial box size for small phones */
 
 /* minor breakpoint for resposive contained table*/
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 610px) {
   .scores {
-    width: 470px;
+    width: 610px;
     overflow-x: auto;
   }
   .scores__table {
-    width: 470px;
+    width: 610px;
     overflow-x: auto;
   }
 }
@@ -445,16 +447,16 @@ p {
   .scores { order: 4; }
   .recent-news { order: 5; }
   .header {
-    width: 50%;
+    width: 100%;
   }
   #drawer {
-    width: 50%;
+    width: 100%;
   }
   .nav__list {
     width: 100%
   }
   .nav__item {
-    width: 100%
+    width: 25%
   }
   a {
     font-size: 20px;
@@ -468,7 +470,21 @@ p {
   .top-news {
     width: 100%
   }
+  body {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+  .recent-news {
+    padding-left: 6em;
+  }
 }
+
+@media screen and (min-width: 800px) {
+  .recent-news {
+    padding-left: 9em;
+  }
+}
+
 @media screen and (min-width: 907px) {
   body{
     max-width: 907px;
@@ -476,97 +492,3 @@ p {
     margin-right: auto;
   }
 
-
-/*their responsive*/
-
-/*content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header__menu {
-  display: none;
-}
-
-.hero, .top-news, .scores, .weather, .recent-news {
-  order: 10;
-}
-
-@media screen and (max-width: 549px) {
-  .header__logo {
-    height: 48px;
-    margin-right: 0.5em;
-  }
-  .header__title {
-    margin-left: 0;
-    font-size: 2em;
-    vertical-align: bottom;
-  }
-  .nav {
-    z-index: 10;
-    background-color: #fff;
-    width: 300px;
-    position: absolute;
-    /* This trasform moves the drawer off canvas. */
-    /*-webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);*/
-    /* Optionally, we animate the drawer. */
- /*   transition: transform 0.3s ease;
-  }
-  .nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  .nav__item {
-    display: list-item;
-    border-bottom: 1px solid #E0E0E0;
-    width: 100%;
-    text-align: left;
-  }
-  .header__menu {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    padding: 1em;
-  }
-  .header__menu svg {
-    width: 32px;
-    fill: #E0E0E0;
-  }
-}*/
-
-/*@media screen and (min-width: 550px) {
-  .hero {
-    order: 0;
-    width: 60%;
-  }
-  .weather {
-    order: 1;
-    width: 40%;
-  }
-}*/
-
-/*@media screen and (min-width: 700px) {
-  .hero {
-    width: 50%;
-  }
-  .top-news {
-    order: 1;
-    width: 50%;
-  }
-  .scores {
-    order: 2;
-    width: 60%;
-  }
-  .weather {
-    order: 3;
-  }
-}*/
-
-/*@media screen and (min-width: 850px) {
-  main, .header__inner, .nav, .content {
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}*/*/
